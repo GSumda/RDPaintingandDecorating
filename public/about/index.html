@@ -1,0 +1,311 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="View our portfolio of painting and property maintenance projects">
+        <link rel="canonical" href="https://www.example.com/about/">
+        <meta name="generator" content="Eleventy v3.1.2">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Gallery | RDPainting"/>
+        <meta property="og:description" content="View our portfolio of painting and property maintenance projects"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.example.com/about/"/>
+        <meta property="og:image" content="/assets/images/logo-small.png"/>
+        <meta property="og:image:secure_url" content="/assets/images/logo-small.png"/>
+
+        <!--Favicons-->
+        <!-- https://realfavicongenerator.net/ -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
+        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="preload" as="image" href="/assets/images/port1-bbafaa7c.avif"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+
+
+        <title>Gallery | RDPainting</title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <div style="width:56px; height:56px; border-radius:50%; overflow:hidden; display:inline-block;">
+                <img src="/assets/svgs/RD%20logo.svg" alt="RD logo" aria-hidden="true" decoding="async" style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link ">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about/" class="cs-li-link  cs-active ">
+                            Gallery
+                        </a>
+                    </li>
+                    <!-- Projects removed -->
+                    <li class="cs-li">
+                        <a href="/services/" class="cs-li-link ">
+                            Services
+                        </a>
+                    </li>
+                    <!-- Contact nav link removed; retained Contact Us button to the right -->
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="https://www.instagram.com/rdpainting_propertymaintenance/" class="cs-social-link cs-social-link-header" aria-label="visit instagram" target="_blank" rel="noopener">
+            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram-gold.svg" alt="instagram" width="20" height="20">
+            <span>instagram</span>
+        </a>
+    </div>
+</header>
+        <main id="main">
+            
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/about/" class="cs-link cs-active">Gallery</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/port1-dd9f82bc.avif" type="image/avif">
+            <source media="(max-width: 600px)" srcset="/assets/images/port1-65236daa.webp" type="image/webp">
+            <source media="(max-width: 600px)" srcset="/assets/images/port1-228d29ba.jpeg" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="/assets/images/port1-ae31b022.avif" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="/assets/images/port1-d08f595b.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="/assets/images/port1-ab7cf92d.jpeg" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="/assets/images/port1-5b3b6d02.avif" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="/assets/images/port1-99f45c0b.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/assets/images/port1-8a274d75.jpeg" type="image/jpeg">
+            <img src="/assets/images/port1-8a274d75.jpeg" alt="gallery" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-48">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Work</span>
+                <h2 class="cs-title">Recent Projects & Installations</h2>
+            </div>
+            <style>
+                .cs-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px; width: 100%; padding: 40px 0; }
+                .cs-gallery-item { position: relative; overflow: hidden; background: #f5f5f5; aspect-ratio: 1; }
+                .cs-gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+                .cs-gallery-item:hover img { transform: scale(1.05); }
+                .cs-gallery-item a { display: block; width: 100%; height: 100%; }
+            </style>
+            <div class="cs-gallery-grid">
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/p/DUfm2DpDUoG/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="https://scontent-sof1-2.cdninstagram.com/v/t51.82787-15/631087298_18055834742675025_5466724503597553084_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=103&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=xBJLKtpRTV8Q7kNvwHtyUiJ&amp;_nc_oc=AdmCHnCRrrNeW27aOJZssEOgaD-RmMWUecd0TmT8-_lLk5oh6G9KvrAOMPPHjMdGk0_lqVEUV6JNExFZnZlgQgyA&amp;_nc_zt=23&amp;_nc_ht=scontent-sof1-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=XBmPLFRLKu_rem18rH2DMA&amp;_nc_tpa=Q5bMBQHn4ThMG4Mu-RvByK6ZBpMm6ob2zTbNA9DqIQeKR4RSgMKvxcjyPzJdOQJe3c6iuO-WJhGbgObNbA&amp;oh=00_AfutcUY6xpHiKLvvjIoAgNFPROfU3-SWoz9a00IoUuaKKg&amp;oe=69A3FD1C" alt="Little mdf unit finished this week. Built by @dmj_carpentry_joinery 
+Colour - Farrow &amp; Ball Dibber 312, mixed in Johnstones aqua guard matt." loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/reel/DQt7xV_jWzx/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="" alt="One bed rental completed. 4th apartment we&#39;ve done in this block, 5 day turnaround 🥂" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/p/DQr2EbYjRh7/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="" alt="Boys room finished in St Albans
+
+Wallpaper - @harlequinfw Wiggle" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/p/DQUuCDUjebg/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="" alt="Paper - @ottolinedevries - Fields of Joy 
+Garden room recently completed on this St Albans project." loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/reel/DPV63VmDfvx/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="" alt="One bed rental white washed. As simple as a white wash is on these types of jobs there&#39;s a lot of small repairs, mould treatment and stain blocking to do. Painting is the easy part. It&#39;s all in the prep 🥂" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+                    <div class="cs-gallery-item">
+                        <a href="https://www.instagram.com/reel/DO9IILvDU6s/" target="_blank" rel="noopener" aria-label="View post on Instagram">
+                            <img src="" alt="Farrow and ball Wimborne White no.239 mixed in Johnstones Durable.
+Sprayed onto this moulding to save time and to achieve an even finish all over." loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get It Done With Us Today</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets-64ce1e64.avif" type="image/avif">
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets-d7f1a0d0.webp" type="image/webp">
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets-92bb7beb.jpeg" type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-eed413f3.avif" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-dc0913f0.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-40364aa1.jpeg" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-412fcf51.avif" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-71868a8d.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-7681ef1d.jpeg" type="image/jpeg">
+        <img src="/assets/images/cabinets-7681ef1d.jpeg" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
+    </picture>
+</section>
+
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-275">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <div style="width:56px; height:56px; border-radius:50%; overflow:hidden; display:inline-block;">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/RD%20logo.svg" alt="RD logo" style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+            </a>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
+            </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/rdpainting_propertymaintenance/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Home</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/about/">Gallery</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/services/">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/blog/">Blog</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/contact/">Contact</a>
+            </li>
+        </ul>
+        <!-- Projects list removed from footer -->
+        <!-- Contact Info -->
+        <ul class="cs-contact">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link cs-address" href="https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6" target="_blank" rel="noopener">
+                    First Address Line, <br>
+                    Second Address Line, <br>
+                    Denver, CO
+                    80206
+                </a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="tel:555-779-4407">(555) 779-4407</a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="mailto:help@codestitch.app">help@codestitch.app</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    </body>
+</html>

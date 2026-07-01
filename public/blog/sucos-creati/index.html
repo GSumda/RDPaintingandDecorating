@@ -1,0 +1,329 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lorem markdownum Talia. Carinae equis.">
+        <link rel="canonical" href="https://www.example.com/blog/sucos-creati/">
+        <meta name="generator" content="Eleventy v3.1.2">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Sucos Creati"/>
+        <meta property="og:description" content="Lorem markdownum Talia. Carinae equis."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.example.com/blog/sucos-creati/"/>
+        <meta property="og:image" content="/assets/images/blog/landing.jpg"/>
+        <meta property="og:image:secure_url" content="/assets/images/blog/landing.jpg"/>
+
+        <!--Favicons-->
+        <!-- https://realfavicongenerator.net/ -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
+        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/blog.css">
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.example.com/blog/sucos-creati/"
+        },
+        "headline": "Sucos Creati",
+        "description": "Lorem markdownum Talia. Carinae equis.",
+        
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://www.example.com/assets/images/blog/landing.jpg",
+                "width": 1200,
+                "height": 630
+            },
+        
+        "datePublished": "2023-06-08T16:27:34.591+01:00",
+        "dateModified": "2023-06-08T16:27:34.591+01:00",
+        
+            "author": {
+                "@type": "Person",
+                "name": "Code Stitch"
+            },
+        
+        
+            "publisher": {
+                "@type": "Organization",
+                "name": "Code Stitch Web Designs",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.example.com/assets/svgs/logo-black.svg",
+                    "width": 210,
+                    "height": 28
+                }
+            }
+        
+    }
+</script> -->
+
+
+        <title>Sucos Creati</title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <div style="width:56px; height:56px; border-radius:50%; overflow:hidden; display:inline-block;">
+                <img src="/assets/svgs/RD%20logo.svg" alt="RD logo" aria-hidden="true" decoding="async" style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link ">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about/" class="cs-li-link ">
+                            Gallery
+                        </a>
+                    </li>
+                    <!-- Projects removed -->
+                    <li class="cs-li">
+                        <a href="/services/" class="cs-li-link ">
+                            Services
+                        </a>
+                    </li>
+                    <!-- Contact nav link removed; retained Contact Us button to the right -->
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="https://www.instagram.com/rdpainting_propertymaintenance/" class="cs-social-link cs-social-link-header" aria-label="visit instagram" target="_blank" rel="noopener">
+            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram-gold.svg" alt="instagram" width="20" height="20">
+            <span>instagram</span>
+        </a>
+    </div>
+</header>
+        <main id="main">
+            
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container"></div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets-e9cfcb90.avif" type="image/avif">
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets-519e5f2e.webp" type="image/webp">
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets-cc8d94be.jpeg" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-5f0b9af7.avif" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-c7e69aed.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="/assets/images/cabinets-4c981006.jpeg" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-db62a53c.avif" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-650dde24.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/assets/images/cabinets-63216a66.jpeg" type="image/jpeg">
+            <img src="/assets/images/cabinets-63216a66.jpeg" alt="library" width="1920" height="482" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Post Content                  -->
+    <!-- ============================================ -->
+
+    <div id="single-article">
+        <div class="cs-container">
+            <article class="cs-article-post">
+                <picture class="cs-article-image">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/landing-184f4808.avif" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="/assets/images/landing-a558df8e.webp" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="/assets/images/landing-b0e59c94.jpeg" type="image/jpeg">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="/assets/images/landing-fae71634.avif" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/landing-0d44abf4.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/landing-4045c755.jpeg" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="/assets/images/landing-3056cd4d.avif" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/landing-80eada7e.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/landing-6b8eb5d7.jpeg" type="image/jpeg">
+                    <img src="/assets/images/landing-6b8eb5d7.jpeg" alt="" width="800" height="400" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-article-group">
+                    <h1 class="cs-article-title">Sucos Creati</h1>
+                    <div class="cs-author-group">
+                        <picture class="cs-author-img">
+                            <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
+                        </picture>
+                        <span class="cs-author-name">Code Stitch</span>
+                        <span aria-hidden="true" class="cs-dot"></span>
+                        <span class="cs-date">8 Jun 2023</span>
+                    </div>
+                </div>
+                <section class="cs-article-content">
+                    <h2>Hospes meus</h2>
+<p>Lorem markdownum Talia. <a href="http://lapsasaturnia.com/inducitest">Carinae equis</a>.</p>
+<p>Illa <em>fatentur parenti</em> formicas dryadas formae cum sexque Thebae exspectat! Turaque lacrimabile patriam aristis. Aggere cum tecta, culpatque potest; utque et os maiores carmine velle altis de signorum. Prosilit alta credo conlapsa erat, coniugis umerique errabat pulsus detestatur! Te dubitat cursu?</p>
+<p>Recentes actus currebam exercet exeat tractoque, aethera accusasse <strong>residunt vellentem</strong> Hesperio. Tacitaque lumina <em>totumque neptis</em>, mihi genitoris totoque nec vigili.</p>
+<h2>Huc est erat</h2>
+<p>Visa tantis eris nec mox Tydides auras, sarisa arbor, omen paternos curvataque pectore tela decimo Nilus. Postquam <em>capiat</em> Cyllenius unde redditur <a href="http://noletiacet.net/aquas-moles">inmensum</a> pedibus. Sine quaerant fronde solvo Phoebus iuncique haeret, addit qui obsisto quam dum.</p>
+<h2>Et erat</h2>
+<p>Urbe quae est noscar illi sues praeterque ipsa clipeum, deus terrebit longo solibus, collocat trahit <strong>glomeravit</strong>: montes. Petisses silvas ut, leve <a href="http://nubespetitis.org/">est mei serpit</a> referuntur nostri, esse tellus Cernis Periphanta belli, hoc sunt.</p>
+<p>Rebus vestem tota relictas forte capioque: vel unda servire concitat acervos nubila resonis et unde rupit, in? Ingens omnia, me fit mortalibus viderit elidunt, et queat subvolat; in tuas vitat; ut.</p>
+<ol>
+<li>Dum et hanc honore ponto parias undam</li>
+<li>Iuvenci toros nigro numquamque demittitur pro funeribus</li>
+<li>Dolet fluitque</li>
+</ol>
+<h2>Sequitur cortice teneo</h2>
+<p>Lapsus flammae. Relatus ille irascitur silet querella tacito: misisset! Tamen arduus et, capitis quae, trepidus insequitur illa pactaeque.</p>
+<ul>
+<li>Se metu</li>
+<li>Videntur in Stygia tellure</li>
+<li>Concordare spatiosum</li>
+<li>Iove progenuit</li>
+</ul>
+<p>Praeter vos: nubibus ceu <strong>medio</strong> qui corpore hoc in quid hanc, inpia meae prior Hecabesque illa. Cum hinc rasa tardius litora despectabat inplerant longis; est <a href="http://www.offensa-vana.com/sororibus">vestibus e</a>. Vires auras pedem silvas sumpsit utinam famulis volucris; <em>crimina cupidine</em>?</p>
+<p>Hostem et pudibundaque quam intima dixit repulsae simul multorumque inde, nymphas ramos paternis. Coepit <a href="http://manus.io/cum-scythicis.aspx">Hodites</a> ab suae remisso prius cingentibus iussos vincla concordare! Precaris membra substitit communis Rhodopeius fieri <em>versus in natorum</em>, est es. Vident paribus an ipse illis, <a href="http://nisi.com/">amplexo</a> ramaliaque Iovis, potes <strong>simque</strong> omnia.</p>
+
+                </section>
+            </article>
+        </div>
+
+        <!-- ============================================ -->
+<!--                Featured Posts                -->
+<!-- ============================================ -->
+
+<div id="blog-sidebar">
+    <!--Featured-->
+    <div class="cs-featured-group">
+        <span class="cs-sidebar-header">Featured Posts</span><a class="cs-sidebar-link" href="/blog/canitiem-saxa/">
+                <picture class="cs-sidebar-img">
+                    <img src="/assets/images/landing-8626d9be.jpeg" alt="" width="60" height="60" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-content-group">
+                    <h3 class="cs-sidebar-title">Canitiem Saxa</h3>
+                    <span class="cs-sidebar-date">8 Jun 2023</span>
+                </div>
+            </a></div>
+</div>
+    </div>
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-275">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <div style="width:56px; height:56px; border-radius:50%; overflow:hidden; display:inline-block;">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/RD%20logo.svg" alt="RD logo" style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+            </a>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
+            </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/rdpainting_propertymaintenance/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Home</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/about/">Gallery</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/services/">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/blog/">Blog</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/contact/">Contact</a>
+            </li>
+        </ul>
+        <!-- Projects list removed from footer -->
+        <!-- Contact Info -->
+        <ul class="cs-contact">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link cs-address" href="https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6" target="_blank" rel="noopener">
+                    First Address Line, <br>
+                    Second Address Line, <br>
+                    Denver, CO
+                    80206
+                </a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="tel:555-779-4407">(555) 779-4407</a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="mailto:help@codestitch.app">help@codestitch.app</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    </body>
+</html>

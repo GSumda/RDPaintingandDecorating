@@ -1,0 +1,206 @@
+﻿## HEAD (no branch)
+ M public/about/index.html
+ M public/admin/index.html
+ M public/assets/css/about.css
+ M public/assets/css/blog.css
+ M public/assets/css/contact.css
+ M public/assets/css/critical.css
+ M public/assets/css/local.css
+ M public/assets/css/projects.css
+ M public/assets/css/reviews.css
+AA public/assets/css/root.css
+ M public/assets/js/dark.js
+ M public/assets/js/dark.js.map
+ M public/assets/js/instafeed.min.js
+ M public/assets/js/nav.js
+ M public/assets/js/nav.js.map
+ M public/assets/less/root.less
+ M public/blog/acuti-modo/index.html
+ M public/blog/canitiem-saxa/index.html
+ M public/blog/index.html
+ M public/blog/sucos-creati/index.html
+ M public/contact/index.html
+ M public/index.html
+ M public/project-one/index.html
+ M public/project-two/index.html
+ M public/reviews/index.html
+ M public/services/index.html
+ M public/sitemap.xml
+AA src/assets/less/root.less
+?? git-status-output.txt
+?? public/assets/images/cabinets-20917a13.avif
+?? public/assets/images/cabinets-36f5d041.webp
+?? public/assets/images/cabinets-40364aa1.jpeg
+?? public/assets/images/cabinets-412fcf51.avif
+?? public/assets/images/cabinets-4c981006.jpeg
+?? public/assets/images/cabinets-4d15eb0f.jpeg
+?? public/assets/images/cabinets-519e5f2e.webp
+?? public/assets/images/cabinets-5f0b9af7.avif
+?? public/assets/images/cabinets-63216a66.jpeg
+?? public/assets/images/cabinets-64ce1e64.avif
+?? public/assets/images/cabinets-650dde24.webp
+?? public/assets/images/cabinets-6814b6da.webp
+?? public/assets/images/cabinets-71868a8d.webp
+?? public/assets/images/cabinets-7681ef1d.jpeg
+?? public/assets/images/cabinets-8b04ba3a.avif
+?? public/assets/images/cabinets-92bb7beb.jpeg
+?? public/assets/images/cabinets-ae9d65fc.avif
+?? public/assets/images/cabinets-c2f756e9.jpeg
+?? public/assets/images/cabinets-c7e69aed.webp
+?? public/assets/images/cabinets-cc8d94be.jpeg
+?? public/assets/images/cabinets-cd57cf61.jpeg
+?? public/assets/images/cabinets-d7f1a0d0.webp
+?? public/assets/images/cabinets-db62a53c.avif
+?? public/assets/images/cabinets-dc0913f0.webp
+?? public/assets/images/cabinets-dfe702b7.jpeg
+?? public/assets/images/cabinets-e9cfcb90.avif
+?? public/assets/images/cabinets-eed413f3.avif
+?? public/assets/images/construction-100021e1.avif
+?? public/assets/images/construction-16b9a39d.avif
+?? public/assets/images/construction-1f470bbb.webp
+?? public/assets/images/construction-241a9596.webp
+?? public/assets/images/construction-2b5c6674.jpeg
+?? public/assets/images/construction-4057d614.avif
+?? public/assets/images/construction-473a3b43.webp
+?? public/assets/images/construction-55296a7e.avif
+?? public/assets/images/construction-5f3ce7af.webp
+?? public/assets/images/construction-65fcf69b.jpeg
+?? public/assets/images/construction-692721fe.jpeg
+?? public/assets/images/construction-6f333749.jpeg
+?? public/assets/images/construction-743ec2f3.webp
+?? public/assets/images/construction-94de2f04.jpeg
+?? public/assets/images/construction-cf3d9d18.jpeg
+?? public/assets/images/construction-e0ad009b.avif
+?? public/assets/images/construction-e19919a6.jpeg
+?? public/assets/images/construction-ee73d1b9.webp
+?? public/assets/images/construction-f716963e.jpeg
+?? public/assets/images/construction-fe5b10f6.avif
+?? public/assets/images/landing-0cddda3f.webp
+?? public/assets/images/landing-0d44abf4.webp
+?? public/assets/images/landing-0debcfc6.jpeg
+?? public/assets/images/landing-12f230fc.webp
+?? public/assets/images/landing-184f4808.avif
+?? public/assets/images/landing-216097c0.avif
+?? public/assets/images/landing-24cf0212.jpeg
+?? public/assets/images/landing-3056cd4d.avif
+?? public/assets/images/landing-367f329a.avif
+?? public/assets/images/landing-4045c755.jpeg
+?? public/assets/images/landing-44ec8e13.jpeg
+?? public/assets/images/landing-50106fdd.avif
+?? public/assets/images/landing-5e9ed891.avif
+?? public/assets/images/landing-5f552f3f.avif
+?? public/assets/images/landing-664c84bc.avif
+?? public/assets/images/landing-69c82513.jpeg
+?? public/assets/images/landing-6b8eb5d7.jpeg
+?? public/assets/images/landing-80eada7e.webp
+?? public/assets/images/landing-8333aa87.jpeg
+?? public/assets/images/landing-8626d9be.jpeg
+?? public/assets/images/landing-86e0770d.avif
+?? public/assets/images/landing-9b3b49e0.jpeg
+?? public/assets/images/landing-a558df8e.webp
+?? public/assets/images/landing-ab08fc9b.jpeg
+?? public/assets/images/landing-aee4506f.webp
+?? public/assets/images/landing-b0e59c94.jpeg
+?? public/assets/images/landing-b80b5756.jpeg
+?? public/assets/images/landing-c56f0c48.avif
+?? public/assets/images/landing-d5e5e4ca.webp
+?? public/assets/images/landing-d7acbfcd.webp
+?? public/assets/images/landing-f115cdcb.webp
+?? public/assets/images/landing-fae71634.avif
+?? public/assets/images/landing-feefefd3.avif
+?? public/assets/images/port1-1e8b213a.webp
+?? public/assets/images/port1-228d29ba.jpeg
+?? public/assets/images/port1-2cf360d8.avif
+?? public/assets/images/port1-5b3b6d02.avif
+?? public/assets/images/port1-6408c9f8.webp
+?? public/assets/images/port1-65236daa.webp
+?? public/assets/images/port1-8a274d75.jpeg
+?? public/assets/images/port1-8eeb209c.jpeg
+?? public/assets/images/port1-99f45c0b.webp
+?? public/assets/images/port1-a3327e21.avif
+?? public/assets/images/port1-ab7cf92d.jpeg
+?? public/assets/images/port1-ae31b022.avif
+?? public/assets/images/port1-b5bd35fa.jpeg
+?? public/assets/images/port1-bb311261.jpeg
+?? public/assets/images/port1-bbafaa7c.avif
+?? public/assets/images/port1-c9e3fbce.webp
+?? public/assets/images/port1-d08f595b.webp
+?? public/assets/images/port1-dd9f82bc.avif
+?? public/assets/images/port1-ea2e8577.jpeg
+?? public/assets/images/port2-032ef4a6.jpeg
+?? public/assets/images/port2-173bda42.jpeg
+?? public/assets/images/port2-45836c53.webp
+?? public/assets/images/port2-5751f376.avif
+?? public/assets/images/port2-5cf95ac2.avif
+?? public/assets/images/port2-6350c8cc.webp
+?? public/assets/images/port2-7976b73d.avif
+?? public/assets/images/port2-bcec5f40.webp
+?? public/assets/images/port2-c30245e1.jpeg
+?? public/assets/images/port2-d33c7307.jpeg
+?? public/assets/images/port3-0b68b52b.jpeg
+?? public/assets/images/port3-1eb3815e.webp
+?? public/assets/images/port3-2f4d4f60.avif
+?? public/assets/images/port3-6dd2a418.jpeg
+?? public/assets/images/port3-992dc454.avif
+?? public/assets/images/port3-a9718925.webp
+?? public/assets/images/port3-a9ac920d.avif
+?? public/assets/images/port3-ca5187c9.webp
+?? public/assets/images/port3-d55d3920.jpeg
+?? public/assets/images/port4-4e0fb998.jpeg
+?? public/assets/images/port4-54a1f7ce.avif
+?? public/assets/images/port4-60a5ca0a.webp
+?? public/assets/images/port4-75a60217.jpeg
+?? public/assets/images/port4-8244df74.avif
+?? public/assets/images/port4-93fdf79f.webp
+?? public/assets/images/port4-ae813da3.jpeg
+?? public/assets/images/port4-b7d6f4f1.webp
+?? public/assets/images/port4-cb4d3d80.jpeg
+?? public/assets/images/port4-d6a5d0ef.avif
+?? public/assets/images/port5-0f4acad1.jpeg
+?? public/assets/images/port5-13a290cc.avif
+?? public/assets/images/port5-2a199d74.jpeg
+?? public/assets/images/port5-4f39f6ab.jpeg
+?? public/assets/images/port5-5e926ce3.webp
+?? public/assets/images/port5-74185e0a.avif
+?? public/assets/images/port5-94ee78e9.jpeg
+?? public/assets/images/port5-cf05d994.webp
+?? public/assets/images/port5-ee60882f.webp
+?? public/assets/images/port5-fe3314e0.avif
+?? public/assets/images/port6-071f0e35.webp
+?? public/assets/images/port6-33cdddfc.avif
+?? public/assets/images/port6-3a852e3a.avif
+?? public/assets/images/port6-488f175f.avif
+?? public/assets/images/port6-48a1c8f1.webp
+?? public/assets/images/port6-81c13df3.jpeg
+?? public/assets/images/port6-85481f44.jpeg
+?? public/assets/images/port6-d3a617f0.webp
+?? public/assets/images/port6-da95ceef.jpeg
+?? public/assets/images/port6-ea842072.jpeg
+?? public/assets/images/port7-03d2836b.avif
+?? public/assets/images/port7-49c458c7.jpeg
+?? public/assets/images/port7-52a62f96.avif
+?? public/assets/images/port7-6597ede9.jpeg
+?? public/assets/images/port7-6f5ccbb1.webp
+?? public/assets/images/port7-70f2c7c5.avif
+?? public/assets/images/port7-737e5750.webp
+?? public/assets/images/port7-893e2a54.jpeg
+?? public/assets/images/port7-9e07dfd5.webp
+?? public/assets/images/port7-a8a54dc7.jpeg
+?? public/assets/images/port8-0ba4fc24.webp
+?? public/assets/images/port8-2a5c3cbd.webp
+?? public/assets/images/port8-40db8aa4.webp
+?? public/assets/images/port8-58f59112.avif
+?? public/assets/images/port8-5d524caa.avif
+?? public/assets/images/port8-8c9256f1.jpeg
+?? public/assets/images/port8-8e97b6d9.jpeg
+?? public/assets/images/port8-e9b75b38.avif
+?? public/assets/images/port8-ebcffa7d.jpeg
+?? public/assets/images/port9-25c365d8.jpeg
+?? public/assets/images/port9-306d9c65.webp
+?? public/assets/images/port9-36e97392.webp
+?? public/assets/images/port9-4dc8e76a.avif
+?? public/assets/images/port9-6a7ff2a8.avif
+?? public/assets/images/port9-80d2a691.jpeg
+?? public/assets/images/port9-b7197321.jpeg
+?? public/assets/images/port9-d3daff46.avif
+?? public/assets/images/port9-f8653b35.webp
