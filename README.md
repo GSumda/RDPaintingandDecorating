@@ -1,22 +1,22 @@
 <br/>
 <p align="center">
   <a href="https://codestitch.app/">
-    <img src="https://codestitch.app/frontend/images/icon.png" alt="Logo" width="80" height="80">
+    <img src="" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Intermediate Starter Kit (LESS)</h3>
 
   <p align="center">
-    Introducing the Intermediate Website Kit, presented by CodeStitch. This kit includes a pre-configured Eleventy environment with Nunjucks templating, along with seamless integration of Decap CMS. This setup allows you to quickly start a project while providing your client with a blog for content management. Everything is ready to go right from the start, offering a fantastic introduction to the advantages of a Static Site Generator, complete with LESS preprocessing  .
+
     <br/>
     <br/>
-    <a href="https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS">SASS Starter Kit</a>
+    <a href="">SASS Starter Kit</a>
     .
-    <a href="https://codestitch-intermediate.netlify.app/">View Live Result</a>
+    <a href="">View Live Result</a>
     .
-    <a href="https://www.youtube.com/watch?v=0BNCYM4InT0&t">Watch Video</a>
+    <a href="">Watch Video</a>
     .
-    <a href="https://codestitch.app/contact">Report Bug</a>
+    <a href="">Report Bug</a>
   </p>
 </p>
 
@@ -27,7 +27,7 @@
     -   <a href="#must-knows">Must Knows</a>
     -   <a href="#good-to-knows">Good-to-knows</a>
 -   <a href="#quick-start-guide">Quick Start Guide</a>
--   <a href="#explanation-of-file-structure">Explanation of File Structure</a>
+-   <a href="#explanation-of-file-structure">Explanation of File Structure.</a>
     -   <a href="#root-files">Root Files</a>
         -   <a href="#eleventyjs">.eleventy.js</a>
         -   <a href="#netlifytoml">netlify.toml</a>
