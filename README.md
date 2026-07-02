@@ -27,7 +27,7 @@
     -   <a href="#must-knows">Must Knows</a>
     -   <a href="#good-to-knows">Good-to-knows</a>
 -   <a href="#quick-start-guide">Quick Start Guide</a>
--   <a href="#explanation-of-file-structure">Explanation of File Structure.</a>
+-   <a href="#explanation-of-file-structure">Explanation  of File Structure.</a>
     -   <a href="#root-files">Root Files</a>
         -   <a href="#eleventyjs">.eleventy.js</a>
         -   <a href="#netlifytoml">netlify.toml</a>
