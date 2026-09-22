@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <title>Content Manager</title>
-</head>
-
-<body>
-    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
-
-    <!-- Decap CMS preview pane script -->
-    <!-- Edit this script to customize the preview pane for your blog posts.  -->
-    <!-- Documentation: https://decapcms.org/docs/customization/ -->
-    <script type="text/babel">
-        const BlogPreview = createClass({
+<!doctype html><html><head><meta charset="utf-8"><meta content="width=device-width,initial-scale=1" name="viewport"><script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script><script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script><title>Content Manager</title></head><body><script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script><script type="text/babel">const BlogPreview = createClass({
             render: function () {
                 // Get all the props from the collection
                 const data = this.props.entry.get("data").toJS();
@@ -61,8 +40,4 @@
 
         // Register the elements and styles for the "blog" collection
         CMS.registerPreviewTemplate("blog", BlogPreview);
-        CMS.registerPreviewStyle("/admin/decap-preview-styles.css");
-    </script>
-</body>
-
-</html>
+        CMS.registerPreviewStyle("/admin/decap-preview-styles.css");</script></body></html>
