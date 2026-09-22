@@ -85,6 +85,98 @@
             }
         }
 
+        .quote-form {
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+
+            h2 {
+                font-size: clamp(1.5rem, 2.7vw, 2.25rem);
+                line-height: 1.2em;
+                font-weight: 900;
+                color: var(--headerColor);
+                margin: 0 0 0.5rem 0;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 0.35rem;
+            }
+
+            label {
+                font-size: (16/16rem);
+                line-height: 1.5em;
+                font-weight: 700;
+                color: var(--headerColor);
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                min-height: (52/16rem);
+                padding: 0.75rem 1rem;
+                border: 1px solid #b4b2c7;
+                border-radius: (6/16rem);
+                background: #fff;
+                font: inherit;
+                color: var(--headerColor);
+                box-sizing: border-box;
+                transition: border-color 0.3s, box-shadow 0.3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--primary);
+                    box-shadow: 0 0 0 3px rgba(125, 125, 125, 0.12);
+                }
+            }
+
+            textarea {
+                min-height: (140/16rem);
+                resize: vertical;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 0.5rem;
+                border: none;
+                cursor: pointer;
+                font-size: (16/16rem);
+                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+                text-decoration: none;
+                font-weight: 700;
+                text-align: center;
+                color: #fff;
+                background-color: var(--primary);
+                border-radius: (4/16rem);
+                position: relative;
+                z-index: 1;
+                box-sizing: border-box;
+                transition: background-color 0.3s ease;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 0%;
+                    background: #000;
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    border-radius: (4/16rem);
+                    transition: width 0.3s;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         .cs-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */

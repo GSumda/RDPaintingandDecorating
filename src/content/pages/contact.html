@@ -58,28 +58,81 @@ permalink: "/contact/"
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
-                    <label>
-                        Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
-                    </label>
-                    <label>
-                        Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
-                    </label>
-                    <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
-                    </label>
-                    <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
-                    </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                <form action="https://formspree.io/f/xeaognar" method="POST" class="quote-form">
+
+                    <h2>Request a Painting &amp; Decorating Quote</h2>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="text" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Job Address</label>
+                        <input id="address" type="text" name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property">Property Type</label>
+                        <select id="property" name="property" required>
+                            <option value="">Select...</option>
+                            <option>House</option>
+                            <option>Flat / Apartment</option>
+                            <option>Bungalow</option>
+                            <option>Commercial Property</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rooms">Rooms to be decorated</label>
+                        <select id="rooms" name="rooms" required>
+                            <option value="">Select...</option>
+                            <option>1 room</option>
+                            <option>2 rooms</option>
+                            <option>3 rooms</option>
+                            <option>4 rooms</option>
+                            <option>Whole property</option>
+                            <option>Exterior only</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Type of work required</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select...</option>
+                            <option>Interior painting</option>
+                            <option>Exterior painting</option>
+                            <option>Wallpapering</option>
+                            <option>Woodwork / trim</option>
+                            <option>Full redecorating</option>
+                            <option>Repair &amp; preparation</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Additional details (optional)</label>
+                        <textarea id="details" name="details" rows="5" placeholder="Tell us about colours, finishes, condition of walls, or anything else"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred start date (optional)</label>
+                        <input id="date" type="date" name="date">
+                    </div>
+
+                    <button type="submit">Request Quote</button>
                 </form>
             </div>
             <div class="cs-right-section">
