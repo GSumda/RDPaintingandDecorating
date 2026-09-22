@@ -45,25 +45,5 @@
             </li>
         </ul>
         <!-- Projects list removed from footer -->
-        <!-- Contact Info -->
-        <ul class="cs-contact">
-            <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-            </li>
-        </ul>
     </div>
 </footer>
